@@ -1,0 +1,11 @@
+\subsection{Реконструкция ячеек по центру градиентов}
+
+Fluent использует теорему Грина-Гаусса для вычисления градиента центра ячейки скалярного \(\phi\):
+\begin{equation}
+\nabla \phi =\frac{1}{V}\sum _{f}^{{N}_{f}}\overline{{\phi_{f}}}{\boldsymbol n}_{f}{A}_{f}
+\end{equation}
+Fluent вычисляет \(\overline{\phi_{f}}\) в соответствии с уравнением:
+\begin{equation}
+\overline{{\phi_{f}}}= \frac{{\phi }_{0}+{\phi }_{1}}{2} 
+\end{equation}
+где~\(\overline{\phi_{f}}\) берется из арифметического среднего значения соседних центров ячеек.

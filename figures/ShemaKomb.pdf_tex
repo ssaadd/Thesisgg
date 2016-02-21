@@ -1,0 +1,72 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'ShemaKomb.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{672.67330933bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.76012482)%
+    \put(0,0){\includegraphics[width=\unitlength]{ShemaKomb.pdf}}%
+    \put(0.15922371,0.72339747){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{6,7~--~8.4~\%}}}%
+    \put(0.38711783,0.72178991){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Резервирование}}}%
+    \put(0.38702433,0.69687289){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{исходной барды}}}%
+    \put(0.22716624,0.59398969){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Центрифугирование или}}}%
+    \put(0.2270077,0.57228777){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{фильтрование}}}%
+    \put(0.4872445,0.60122369){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Фильтрат до 4~\% СВ}}}%
+    \put(0.17412365,0.4891985){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Осадок}}}}%
+    \put(0.22581639,0.49194291){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{30--35~\% СВ}}}}%
+    \put(0.19354108,0.39453926){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Сушка}}}%
+    \put(0.4988859,0.13503416){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Фасовка в крупную тару (мешки)}}}%
+    \put(0.48049198,0.05218804){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Отгрузка}}}}%
+    \put(0.73766316,0.23593128){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{СВК}}}}%
+    \put(0.75785458,0.31266844){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Сушка концентрата}}}%
+    \put(0.70884246,0.45144245){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Белково-}}}}%
+    \put(0.7418544,0.45124734){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{минеральный}}}}%
+    \put(0.77961724,0.45152375){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{концентрат 25~\%  СВ}}}}%
+    \put(0.75347954,0.58444267){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Мембранное разделение}}}%
+    \put(0.93429435,0.38362948){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Чистая вода обратно в производство}}}}%
+  \end{picture}%
+\endgroup%

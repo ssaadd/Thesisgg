@@ -1,0 +1,106 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'x2x4nomogramme.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{354.05648299bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.99883259)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{x2x4nomogramme.pdf}}%
+    \put(0.02690947,0.47792548){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\(X_{4}\) \%}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{x2x4nomogramme.pdf}}%
+    \put(0.04770701,0.0991451){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{60}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{x2x4nomogramme.pdf}}%
+    \put(0.04770701,0.27657442){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{63}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{x2x4nomogramme.pdf}}%
+    \put(0.04770701,0.4541732){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{66}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{x2x4nomogramme.pdf}}%
+    \put(0.04770701,0.63143306){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{69}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{x2x4nomogramme.pdf}}%
+    \put(0.04770701,0.80903184){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{72}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{x2x4nomogramme.pdf}}%
+    \put(0.04770701,0.98646115){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{75}}}%
+    \put(0.45764171,0.00712505){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\(X_{2}\) м/c}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{x2x4nomogramme.pdf}}%
+    \put(0.1317614,0.19150325){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{x2x4nomogramme.pdf}}%
+    \put(0.17090769,0.47433948){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3.1}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{x2x4nomogramme.pdf}}%
+    \put(0.32884859,0.50755452){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3.2}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{x2x4nomogramme.pdf}}%
+    \put(0.72810692,0.51314684){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3.4}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{x2x4nomogramme.pdf}}%
+    \put(0.88333611,0.74599105){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3.5}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{x2x4nomogramme.pdf}}%
+    \put(0.51864882,0.5009454){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3.3}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{x2x4nomogramme.pdf}}%
+    \put(0.83915537,0.37617554){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{9.5}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{x2x4nomogramme.pdf}}%
+    \put(0.56750408,0.55360486){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{x2x4nomogramme.pdf}}%
+    \put(0.25501157,0.68663448){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10.5}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{x2x4nomogramme.pdf}}%
+    \put(0.36465509,0.55360486){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10.25}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{x2x4nomogramme.pdf}}%
+    \put(0.73968,0.55360486){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{9.75}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{x2x4nomogramme.pdf}}%
+    \put(0.13039679,0.91816612){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{7.5}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{x2x4nomogramme.pdf}}%
+    \put(0.22936405,0.76869844){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{8}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{x2x4nomogramme.pdf}}%
+    \put(0.35239527,0.64956491){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{8.5}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{x2x4nomogramme.pdf}}%
+    \put(0.58439215,0.60025074){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{9}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{x2x4nomogramme.pdf}}%
+    \put(0.76283825,0.37452405){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{9.5}}}%
+    \put(0.09861081,0.05429917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{8}}}%
+    \put(0.26756123,0.05429917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{8.8}}}%
+    \put(0.4450047,0.05429917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{9.6}}}%
+    \put(0.61701674,0.05429917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10.4}}}%
+    \put(0.79462967,0.05429917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{11.2}}}%
+    \put(0.97314066,0.05429917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{12}}}%
+  \end{picture}%
+\endgroup%

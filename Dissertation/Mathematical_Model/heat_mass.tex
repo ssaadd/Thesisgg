@@ -1,0 +1,114 @@
+\section{Постановка задачи}
+
+\subsection{Модель газофазной тепло- массопередачи}
+
+Для описания тепловых и массообменных процессов, связанных с восхождением перегретого пузыря в жидкости следует рассматривать исходя из одновременного решения
+уравнений непрерывности, сохранения импульса, энергии и компонентов смеси. Для упрощения задачи моделирования предполагается, что градиент внутреннего давления незначителен, отсюда следует, что уравнение сохранения импульса выводится из постановки задачи, исходя из того, что постоянное значение давления вносит  незначительный процент ошибки в результаты численного решения. 
+%<*volume>
+Рассмотрим бесконечно малый сферический объём \(\mathrm{d}v\) (\cref{fig:math_finitevolume}):
+\begin{equation}
+\mathrm{d}v=r^{2} \cdot\sin \theta \cdot  \mathrm{d}r \cdot  \mathrm{d}\theta \cdot  \mathrm{d}\phi
+\end{equation}
+
+где $r$, $\theta$, и $\phi$ "--- радиус, полярный и азимутальный углы, соответственно.
+
+
+
+Уравнения непрерывности в сферической системе координат:
+\begin{equation}
+\frac{\partial \rho}{\partial t} + \frac{1}{r^{2}}\frac{\partial \rho r^{2}  v_{r}}{\partial r} + \frac{1}{r \sin \theta}\frac{\partial \rho  v_{\theta}\sin\theta}{\partial \theta} +\frac{1}{r\cdot \sin \theta} \frac{\partial \rho v_{\phi}}{\partial \phi}=0\label{eq:inf_spherical}
+\end{equation}
+
+Используя зависимости, что \(\rho_{i} = Y_{i}\rho\) и \(v_{i} = v + V_{i}\) для многокомпонентной системы, преобразуется в уравнение  сохранения массы для i-тых компонентов в рассматриваемом объеме: 
+\begin{gather}
+\frac{\partial}{\partial t}(\rho   Y_{i})+ \frac{1}{r^{2}} \frac{\partial}{\partial r} \left[r^{2}  \rho   Y_{i}  \left(v_{r}  + v_{i} \right)\right]+\frac{1}{r  \sin \theta}\frac{\partial}{\partial \theta}\left[\rho   Y_{i} \left(v_{\theta}  + v_{i}\right ) \sin\theta\right]+\notag
+\\
++\frac{1}{r \sin \theta} \frac{\partial }{\partial \phi} \left[\rho   Y_{i}  \left(v_{\phi} + v_{i} \right) \right] = 0
+\end{gather}
+
+\begin{figure}[htb]
+\centering
+\def\svgwidth{11cm} % если надо изменить размер
+\input{figures/sphere_finite_volume.pdf_tex}
+\caption{Бесконечно малый объем в пространстве заданном сферическими координатами}
+\label{fig:math_finitevolume}
+\end{figure}
+
+Уравнение сохранения энергии для данного объема аналогично можно привести к виду:
+\begin{gather}
+\frac{\partial}{\partial t}(H \rho)+ \frac{1}{r^{2}} \frac{\partial}{\partial r} \left[r^{2}  \left(\rho H v_{r}+q \right)\right]+
+\frac{1}{r \sin \theta}\frac{\partial}{\partial \theta}\left[\sin\theta \left(\rho H v_{\theta}+q \right)\right]+
+\\
++\frac{1}{r \sin \theta} \frac{\partial}{\partial \phi} \left(\rho   H   v_{\phi}+q \right) = 0 \notag
+\end{gather}
+%</volume>
+
+
+Другие упрощения: пузырь имеет сферическую форму и  сферическую симметрия
+внутри, гидростатический напор столба жидкости не учитывается в целях рассмотрения давления внутри  пузыря постоянным в течении всего процесса, газовая фаза представляет собой идеальную бинарную смесь водяного пара и воздуха, существует равновесие жидкости--пара на поверхности пузырька, нет источников тепла и сила тяжести является единственной силой.
+Уравнения непрерывности в сферических координатах для двухфазного пузырька преобразуются к виду:
+\begin{gather}
+\frac{\partial \rho}{\partial t} + \frac{1}{r^{2}}\frac{\partial }{\partial r} (r^{2} \rho v)= 0\label{eq:math_continuity} \\
+\frac{\partial}{\partial t}(H \rho)+ \frac{1}{r^{2}} \frac{\partial}{\partial r} \left(r^{2} \rho H v \right)+ \frac{1}{{r}^{2}}\frac{\partial }{\partial r}\left({r}^{2}q\right)=0\label{eq:math_energy} \\
+\frac{\partial}{\partial t}(\rho   Y_{i})+ \frac{1}{r^{2}} \frac{\partial}{\partial r} \left[r^{2}  \rho   Y_{i}  \left(v  + W_{i} \right)\right] = 0\label{eq:math_species}
+\end{gather}
+где \(\rho\)~"--- плотность, \(кг/м^3\); 
+\(t\)~"--- время, \(с\);
+\(r\)~"--- радиальная координата, \(м\);
+\(v\)~"--- радиальная скорость, \(м/c\);
+\(H\)~"--- удельная энтальпия, \(кДж/кг\);
+\(q\)~"--- тепловая диффузия, \(м^{2}/с\);
+\(t\)~"--- массовая доля компонента;
+\(W\)~"--- радиальная диффузия, \(м^{2}/c\).
+
+Энтальпия, тепловая  и радиальная диффузия задаются уравнениями:
+\begin{gather}
+ H\left(T\right)=\sum _{i=1}^{2}Y_{i}{H}_{i}^{0}\left(T\right)\\
+ q=-\lambda \frac{\partial T}{\partial r}+\sum _{i=1}^{2}\rho {H}_{i}^{0}{Y}_{i}{W}_{i}\\
+ {W}_{i}=-\frac{{D}_{i}}{{Y}_{i}}\frac{\partial {Y}_{i}}{\partial r} 
+\end{gather} 
+где \(T\)~"--- температура, \(К\);
+\(\lambda\)~"--- коэффициент температуропроводности, \(м^{2}/с\).
+
+Граничные условия на поверхности пузырька для \cref{eq:math_continuity,eq:math_energy,eq:math_species} задаются массовым и энергетическим балансами, которые  получены
+из  уравнений непрерывности и выражаются:
+ \begin{gather} 
+  -\frac{\stackrel{.}{m}}{4\pi {R}^{2}}={\rho }_{S}\left({v}_{S}-\frac{dR}{dt}\right) , \, r=R\left(t\right)\label{eq:math_boundary1}\\
+  \left.{\rho }_{S}{D}_{S}{\frac{\partial {Y}_{1}}{\partial r}}\right\vert_{r=R\left(t\right)}=\frac{\stackrel{.}{m}}{4\pi {R}^{2}}\left(1-{Y_1}_{S}\right), \, r=R\left(t\right)\label{eq:math_boundary2}\\
+ \left.-\lambda {\frac{\partial T}{\partial r}}\right\vert_{r=R\left(t\right)}=\frac{\stackrel{.}{m}}{4\pi {R}^{2}}{L}_{1}\left({T}_{S}\right)+h\left({T}_{S}-{T}_{L}\right), \, r=R\left(t\right)\label{eq:math_boundary3}
+\end{gather} 
+где \(\stackrel{.}{m}\)~"--- скорость испарения пузырька, \(К/с\).
+
+На рисунке~\ref{fig:droplet_volume} показан контрольный объём пузырька с вышеуказанными граничными условиями.
+\begin{figure}[htb]
+\centering
+\def\svgwidth{11cm} % если надо изменить размер
+\input{figures/droplet_volume.pdf_tex}
+\caption{Контрольный объём пузырька}
+\label{fig:droplet_volume}
+\end{figure}
+
+Полагая постоянное значение средней удельной теплоемкости для газового компонента во всей области температур, \cref{eq:math_energy} может быть преобразовано:
+\begin{gather}
+ \frac{\partial }{\partial t}\left(\rho {C}_{p}T\right)+\frac{1}{{r}^{2}}\left({r}^{2}\rho v{C}_{p}T\right)-\frac{1}{{r}^{2}}\frac{\partial }{\partial r}\left({r}^{2}\lambda \frac{\partial T}{\partial r}\right)+\notag\\
+ +\left(\stackrel{-}{{C}_{{P}_{1}}^{0}}-\stackrel{-}{{C}_{{P}_{2}}^{0}}\right)\frac{1}{{r}^{2}}\frac{\partial }{\partial r}\left({r}^{2}T\rho D\frac{\partial {Y}_{1}}{\partial r}\right) 
+\end{gather}
+где \({C}_{P}\)~"--- удельная теплоемкость при постоянном давлении, \(кДж/кгК\);
+индекс \({-}\)~"--- среднее значение;
+индекс \({0}\)~"--- чистый компонент.  
+ 
+Поскольку  внутри пузыря нет циркуляции фаз, то радиальная скорость обусловлена
+расширением пузырька. 
+Таким образом, она может быть получена интегрированием уравнения непрерывности:
+\begin{equation}
+ v\left(r,t\right)=-\frac{1}{{r}^{2}\rho \left(r,t\right)}\underset{0}{\overset{r}{\int }}\frac{\partial \rho \left(\xi ,t\right)}{\partial t}{\xi }^{2}d\xi  
+\end{equation}
+
+Средние значения удельной теплоемкости для компонентов смеси, которые были использованы для упрощения уравнения~(\ref{eq:math_energy}),  получены интегрированием средней удельной теплоемкости температур в пределах интегрирования температура
+газа на входе и температура жидкости:
+\begin{equation}
+ \stackrel{-}{{C_p}_{i}^{0}}=\frac{1}{{T}_{0}-{T}_{L}}\underset{{T}_{L}}{\overset{{T}_{0}}{\int }}{C}_{{p}_{i}}^{0}dT 
+\end{equation}
+где нижний индекс \({L}\)~"--- жидкость;
+нижний индекс \({0}\)~"--- начальное значение.   
+

@@ -1,0 +1,108 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'x2x4y2.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{479.11401367bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.9261979)%
+    \put(0,0){\includegraphics[width=\unitlength]{x2x4y2.pdf}}%
+    \put(0.06604985,0.71230125){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{75}}}%
+    \put(0.06711383,0.58223874){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{70}}}%
+    \put(0.06703434,0.45232304){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{65}}}%
+    \put(0.06716275,0.3224317){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{60}}}%
+    \put(0.06701599,0.19271167){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{55}}}%
+    \put(0.8380321,0.44152512){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.83822165,0.39345013){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.83850294,0.34778968){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{3}}}%
+    \put(0.83820942,0.30132472){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{4}}}%
+    \put(0.83819719,0.26534298){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{5}}}%
+    \put(0.83791591,0.22219286){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{6}}}%
+    \put(0.83806267,0.18608883){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{7}}}%
+    \put(0.83793426,0.15961194){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{8}}}%
+    \put(0.83801375,0.11665749){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{9}}}%
+    \put(0.94703823,0.50160172){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$X_{2}$}}}%
+    \put(0.59435661,0.74361169){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$X_{4}$}}}%
+    \put(0.28912718,0.03117265){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{8}}}%
+    \put(0.41909792,0.03117265){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{9}}}%
+    \put(0.67889885,0.03117265){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{11}}}%
+    \put(0.80778115,0.03117265){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{12}}}%
+    \put(0.54792523,0.03117265){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{10}}}%
+    \put(0.13888572,0.71195882){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.13881846,0.58206753){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.13984575,0.45232304){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.1388367,0.32228494){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-1}}}%
+    \put(0.13935656,0.1923937){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-2}}}%
+    \put(0.61908095,0.00540549){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\nu_\text{с.а.}$, м/с}}}%
+    \put(0.2891761,0.09462066){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-2}}}%
+    \put(0.42007628,0.09462066){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-1}}}%
+    \put(0.67889885,0.09462066){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.80897965,0.09462066){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.54894029,0.09476741){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.82706336,0.64354331){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Исследуемая область}}}%
+    \put(0.2891761,0.43456168){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-2}}}%
+    \put(0.41639991,0.43456168){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-1}}}%
+    \put(0.80897965,0.43456168){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.53726102,0.43470844){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.52141451,0.71195882){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.52134725,0.58350293){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.52136559,0.3208497){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-1}}}%
+    \put(0.52188535,0.1923937){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-2}}}%
+    \put(0.6803342,0.43456168){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.01797752,0.46042516){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{$\omega$, \%}}}}%
+    \put(0.88845373,0.55016041){\color[rgb]{0,0,0}\rotatebox{-18.8570001}{\makebox(0,0)[b]{\smash{$X'_{2}$}}}}%
+    \put(0.62930095,0.85944237){\color[rgb]{0,0,0}\rotatebox{-18.8570001}{\makebox(0,0)[b]{\smash{$X'_{4}$}}}}%
+    \put(0.24423232,0.69934441){\color[rgb]{0,0,0}\rotatebox{-18.8570001}{\makebox(0,0)[b]{\smash{-2}}}}%
+    \put(0.36462775,0.65822476){\color[rgb]{0,0,0}\rotatebox{-18.8570001}{\makebox(0,0)[b]{\smash{-1}}}}%
+    \put(0.73613717,0.53134007){\color[rgb]{0,0,0}\rotatebox{-18.8570001}{\makebox(0,0)[b]{\smash{2}}}}%
+    \put(0.4790495,0.61930043){\color[rgb]{0,0,0}\rotatebox{-18.8570001}{\makebox(0,0)[b]{\smash{0}}}}%
+    \put(0.55366281,0.88679203){\color[rgb]{0,0,0}\rotatebox{-18.8570001}{\makebox(0,0)[b]{\smash{2}}}}%
+    \put(0.51208124,0.76525224){\color[rgb]{0,0,0}\rotatebox{-18.8570001}{\makebox(0,0)[b]{\smash{1}}}}%
+    \put(0.42720715,0.51669013){\color[rgb]{0,0,0}\rotatebox{-18.8570001}{\makebox(0,0)[b]{\smash{-1}}}}%
+    \put(0.38618113,0.39496071){\color[rgb]{0,0,0}\rotatebox{-18.8570001}{\makebox(0,0)[b]{\smash{-2}}}}%
+    \put(0.61439635,0.57291922){\color[rgb]{0,0,0}\rotatebox{-18.8570001}{\makebox(0,0)[b]{\smash{1}}}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,144 @@
+\section{Балансовые уравнения процесса барботажного выпаривания}
+
+\subsection{Массовый баланс}
+
+В стационарном состоянии массовый баланс потока воздуха находят по уравнению:
+\begin{equation}
+{m}_{a}^{in}={m}_{a}^{out}
+\end{equation}
+где \({m}_{i}^{in}\) "--- массовый расход компонента на входе в колонну, \(м^{3}/ч\);
+\({m}_{i}^{in}\) "--- массовый расход компонента на выходе из колонны, \(м^{3}/ч\);
+\({}_{a}\) "--- воздух.
+
+
+Для жидкости также учитывается  испарение:
+\begin{equation}
+{m}_{w}^{in}+{m}_{w}^{ev}={m}_{w}^{out}\label{eq:balance_water_ev}
+\end{equation}
+
+где \({m}_{w}^{ev}\) "--- массовый расход выпаренной жидкости, \(м^{3}/ч\);
+\({}_{w}\) "--- жидкость.
+
+
+При этом,
+\begin{equation}
+{m}_{w}^{out}=\frac{{m}_{a}^{out}}{\left(1-{z}_{w}^{out}\right)}{z}_{w}^{out}= \frac{{m}_{a}^{in}}{\left(1-{z}_{w}^{out}\right)}{z}_{w}^{out}\label{eq:balance_water_out}
+\end{equation}
+\begin{equation}
+{m}_{w}^{in}=\frac{{m}_{a}^{in}}{\left(1-{z}_{w}^{in}\right)}{z}_{w}^{in}\label{eq:balance_water_in} 
+\end{equation}
+
+где \({z}_{i}^{out}\) "--- массовая доля компонента на выходе из колонны;
+\({z}_{i}^{in}\) "--- массовая доля компонента на входе в колонну.
+
+
+Далее, подставляя (\ref{eq:balance_water_out}) и (\ref{eq:balance_water_in}) в \cref{eq:balance_water_ev}:  
+\begin{equation}
+{m}_{w}^{ev}={m}_{w}^{out}-{m}_{w}^{in}= {m}_{a}^{in}\left[\frac{{z}_{w}^{out}}{\left(1-{z}_{w}^{out}\right)}-\frac{{z}_{w}^{in}}{\left(1-{z}_{w}^{in}\right)}\right]\label{eq:balance_mass_water_ev} \end{equation}
+
+Для определения \({m}_{w}\) в каждый момент времени \(i\)  \cref{eq:balance_mass_water_ev} преобразуется к виду:
+\begin{equation}
+{M}_{w}^{ev}(i)={M}_{w}^{out}(i)-{M}_{w}^{in}(i)= {M}_{a}^{in}(i)\left[\frac{{z}_{w}^{out}}{\left(1-{z}_{w}^{out}\right)}-\frac{{z}_{w}^{in}}{\left(1-{z}_{w}^{in}\right)}\right]\label{eq:balance_water_ev_i} \end{equation}
+
+где \(z_{w}\) как функция \(y_{w}\) выражается:
+ 
+\begin{equation}
+{z}_{w}=\frac{{y}_{w}M{W}_{w}}{{y}_{w}M{W}_{w}+\left(1-{y}_{w}\right)M{W}_{a}}\label{eq:balance_mass_fraction}
+\end{equation}
+
+
+где \(M{W}_{i}\) "--- молекулярная масса компонента \(i\);
+\({y}_{w}\) "--- мольная доля жидкости, \(моль\).
+ 
+
+Откуда, \(y_{w}\) находят по уравнению:
+\begin{equation}
+{y}_{w}^{in}=\frac{{p}_{w}}{{p}^{top}}= \frac{{p}_{w}^{sat}\left({T}^{amb}\right)}{{p}^{atm}}\times\frac{W}{100} 
+\end{equation}
+
+где \({p}_{w}\) "--- парциальное давление  жидкости \(Па\);
+\({p}^{top}\) "--- давление вверху колонны, \(Па\);
+\({T}^{amb}\) "--- температура окружающей среды, \(\celcius\);
+\({p}^{atm}\) "--- атмосферное давление, \(Па\);
+\(W\) "--- относительная влажность газа уходящего из верха колонны.
+ 
+
+Для определения давления насыщенного пара \({p}_{w}^{sat}\) используется уравнение Антуана:
+\begin{equation}
+{p}_{w}^{sat}=10^{\left(A-\frac{B}{T+C}\right)}
+\end{equation}
+
+Интенсивности испарения по содержанию влаги в газе удаляемого из верха колонны, определяют по уравнению:
+\begin{equation}
+{y}_{w}^{out}=\frac{{p}_{w}}{{p}^{top}}= \frac{{p}_{w}^{sat}\left({T}^{out}\right)}{{p}^{top}}\times\frac{W}{100} 
+\end{equation}
+
+Далее полученное значение \({y}_{w}^{out}\) подставляют в \cref{eq:balance_mass_water_ev} для определения \({M}_{w}^{ev}(i)\).
+
+где \({T}^{out}\) "--- температура на выходе из колонны \(\celcius\);
+
+
+Полагая термодинамическое равновесие газ-жидкость на выходе из конденсатора, интенсивность испарения по массе сконденсированной влаги находят по уравнению:
+\begin{equation}
+{y}_{w}^{inc}=\frac{{p}_{w}^{inc}}{{p}^{atm}}= \frac{{p}_{w}^{sat}\left({T}^{cold}\right)}{{p}^{atm}}\times\frac{W}{100} \end{equation}
+
+
+где \({p}_{w}^{inc}\) "--- давление пара на входе в конденсатор, \(Па\);
+\({T}^{cold}\) "---  температура газа на выходе из конденсатора, принимается практически равной температуре охлаждающей жидкости (\(15\celcius\)).
+
+
+Учитывая массу конденсата пара (\({M}_{w}^{c}\)), \({M}_{w}^{out}\) находят по уравнению:
+\begin{equation}
+{M}_{w}^{out}(i)={M}_{w}^{c}(i)+{M}_{w}^{inc}(i)= {{M}_{w}^{c}(i)+M}_{a}^{in}(i)\frac{{z}_{w}^{inc}}{\left(1-{z}_{w}^{in}\right)}\label{eq:balance_water_cond}
+\end{equation}
+
+Значение \({M}_{w}^{out}(i)\) подставляют в \cref{eq:balance_mass_water_ev} для нахождения \({M}_{w}^{ev}(i)\),  исходя из предположении о насыщенности данной системы: \(W=1\).
+
+% \begin{equation}
+% {p}_{w}{\varnothing }_{w}={\gamma }_{w}{x}_{w}{f}_{w}^{0} 
+% \end{equation}
+% 
+% 
+% \begin{equation}
+% {p}_{w}={y}_{w}^{out}{P}^{top} 
+% \end{equation}
+% 
+% 
+% \begin{equation}
+% {y}_{w}^{out}=\frac{{\gamma }_{w}{x}_{w}{f}_{w}^{0}}{{\varnothing }_{w}{P}^{top}}
+% \end{equation}
+
+
+\subsection{Энергетический баланс}
+
+Скрытая теплота определяется как теплотой газа, поступающего в колонну, так и кондукцией барботёра, тогда баланс энергии в стационарном состоянии:
+\begin{equation}
+{q}^{ev}={q}_{G}+{q}_{conduct}
+\end{equation}
+
+где \({q}_G\) "--- тепловой поток газа, \(Вт;\)
+\({q}_{conduct}\) "--- тепловой поток, вызванный кондукцией барботера, \(Вт\).
+
+
+По значению скрытой теплоты парообразования (\(\lambda_{m}\), \(Дж/кг\)) и используя \cref{eq:balance_mass_fraction}
+, \({q}^{ev}\) находят из зависимости:
+\begin{equation}
+{q}^{ev}={m}_{a}^{in}{\lambda }_{m}\left[\frac{{z}_{w}^{out}}{\left(1-{z}_{w}^{out}\right)}-\frac{{z}_{w}^{in}}{\left(1-{z}_{w}^{in}\right)}\right] \end{equation}
+
+Далее используя \cref{eq:balance_mass_fraction}:
+\begin{equation}
+{q}_G={q}_{a}+{q}_{w}={m}_{a}^{in}\left[{C}_{p,a}^{m}\left({T}^{in}-{T}^{L}\right)+{C}_{p,w}^{m}\left({T}^{in}-{T}^{L}\right) \frac{{z}_{w}^{in}}{\left(1-{z}_{w}^{in}\right)} \right] 
+\end{equation}
+
+где \({C}_{p,i}^{m}\) "--- удельная теплоемкость компонента \(i\), \(Дж/кг\celcius\);
+\({T}^{in}\) "--- температура газа на входе в колонну, \(\celcius\);
+\({T}^{L}\) "--- температура жидкости в колонне, \(\celcius\).
+
+
+
+% \begin{equation}
+% {Q}_{wei}^{ev}\left(i\right)={\lambda }_{m}{M}_{w}^{ev}\left(i\right) 
+% \end{equation}
+
+
+

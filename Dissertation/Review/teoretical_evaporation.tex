@@ -1,0 +1,132 @@
+\section{Теоретические основы выпаривания при утилизации спиртовой барды}
+
+Модель для двухфазного пузырька при барботажном выпаривании задаются уравнениями непрерывности \cite{Campos.Heat.2000} в сферических координатах:
+\begin{gather}
+\frac{\partial \rho}{\partial t} + \frac{1}{r^{2}}\frac{\partial }{\partial r} (r^{2} \rho v)= 0\label{eq:math_continuity} \\
+\frac{\partial}{\partial t}(H \rho)+ \frac{1}{r^{2}} \frac{\partial}{\partial r} \left(r^{2} \rho H v \right)+ \frac{1}{{r}^{2}}\frac{\partial }{\partial r}\left({r}^{2}q\right)=0\label{eq:math_energy} \\
+\frac{\partial}{\partial t}(\rho   Y_{i})+ \frac{1}{r^{2}} \frac{\partial}{\partial r} \left[r^{2}  \rho   Y_{i}  \left(v  + W_{i} \right)\right] = 0\label{eq:math_species}
+\end{gather}
+где \(\rho\)~"--- плотность, \(кг/м^3\); 
+\(t\)~"--- время, \(с\);
+\(r\)~"--- радиальная координата, \(м\);
+\(v\)~"--- радиальная скорость, \(м/c\);
+\(H\)~"--- удельная энтальпия, \(кДж/кг\);
+\(q\)~"--- тепловая диффузия, \(м^{2}/с\);
+\(t\)~"--- массовая доля компонента;
+\(W\)~"--- радиальная диффузия, \(м^{2}/c\).
+
+Энтальпия, тепловая  и радиальная диффузия:
+\begin{gather}
+ H\left(T\right)=\sum _{i=1}^{2}Y_{i}{H}_{i}^{0}\left(T\right)\\
+ q=-\lambda \frac{\partial T}{\partial r}+\sum _{i=1}^{2}\rho {H}_{i}^{0}{Y}_{i}{W}_{i}\\
+ {W}_{i}=-\frac{{D}_{i}}{{Y}_{i}}\frac{\partial {Y}_{i}}{\partial r} 
+\end{gather} 
+где \(T\)~"--- температура, \(К\);
+\(\lambda\)~"--- коэффициент температуропроводности, \(м^{2}/с\).
+
+Граничные условия на поверхности пузырька для \cref{eq:math_continuity,eq:math_energy,eq:math_species} задаются массовым и энергетическим балансами, которые  получены
+из  уравнений непрерывности и выражаются:
+ \begin{gather} 
+  -\frac{\stackrel{.}{m}}{4\pi {R}^{2}}={\rho }_{S}\left({v}_{S}-\frac{dR}{dt}\right) , \, r=R\left(t\right)\label{eq:math_boundary1} \notag\\
+  \left.{\rho }_{S}{D}_{S}{\frac{\partial {Y}_{1}}{\partial r}}\right\vert_{r=R\left(t\right)}=\frac{\stackrel{.}{m}}{4\pi {R}^{2}}\left(1-{Y_1}_{S}\right), \, r=R\left(t\right)\label{eq:math_boundary2}\\
+ \left.-\lambda {\frac{\partial T}{\partial r}}\right\vert_{r=R\left(t\right)}=\frac{\stackrel{.}{m}}{4\pi {R}^{2}}{L}_{1}\left({T}_{S}\right)+h\left({T}_{S}-{T}_{L}\right), \, r=R\left(t\right)\label{eq:math_boundary3}\notag
+\end{gather} 
+где \(\stackrel{.}{m}\)~"--- скорость испарения пузырька, \(К/с\).
+
+Математическая модель процесса барботажного выпаривания, основанная на балансовых уравнения процесса \cite{Reypnazarova.Mathematical.2008} для элементарной зоны барботажного аппарата характеризуется системой уравнений:
+\begin{gather}
+\frac{d{a}_{i}}{d\tau }=\frac{3}{Vp{K}_{t}}\left({G}_{0}{c}_{1-1}{t}_{i-1}-\frac{{a}_{0}}{{a}_{i}}\right){G}_{1_0}{c}_{i}{t}_{i}- \left(\frac{{a}_{0}}{{a}_{i}-1}-\frac{{a}_{0}}{{a}_{i}}\right){G}_{1_0}I+\notag\\
++\left(\frac{1}{{a}_{i}-2}-\frac{1}{{a}_{i}-1}\right){G}_{0}{a}_{0}{I}_{i}+ KV\left({t}_{2i-2}-{t}_{i-1}\right)\notag\\
+ {t}_{i}=\left({G}_{0}+{K}_{i}{c}_{i}\right) \\
+ I=\left({I}_{0}+{K}_{i}\left({t}_{2}-{t}_{2_0}\right)\right) \notag\\
+ {c}_{1}=\left({c}_{1_0}+K{c}_{1}\left({t}_{1}-{t}_{10}\right)\right) \notag
+\end{gather}
+где \(G\)~"--- расход теплоты, \(\text{кг}/\text{с}\); \(c\)~"--- теплоемкость, \(\text{кДж}/\text{кгК} \); \(t\)~"--- температура, \(\celcius\);
+\(I\)~"--- энтальпия преобразования, \(\text{кДж}/\text{кг}\); \(K\)~"--- коэффициент теплопередачи; \(a\)~"--- элементарная ячейка; \(V\)~"--- объем,
+\(\text{м}^{3}\); \(p\)~"--- давление, Па; индексы: \(0\)~"--- начальное состояние; \(1\)~"--- жидкость; \(2\)~"--- газ.
+
+Модель роста парового пузырька в предельно перегретой жидкости~\cite{Aktershev.Rost.2005} сформулирована на основе схемы температурно-однородного равновесного парового пузырька, в которой учитывается изменение давления и плотности пара в пузырьке.
+
+Уравнение динамики парового пузырька:
+\begin{equation}
+\frac{1}{R}\frac{d}{dt}\left({u}_{1}{R}^{2}\right)=\frac{{p}_{1}-{p}_{0}}{{\rho }_{1}}+\frac{{u}_{1}^{2}}{2} 
+\end{equation}
+где \(\rho_{1}(t)\)~"---давление в жидкости на межфазной поверхности, \(p_{0}\)~"--- давление
+вдали от пузырька.
+
+Граничные условия:
+\begin{gather}
+{\rho }_{1}\left(\frac{dR}{dt}-{u}_{1}\right)={\rho }_{v}\left(\frac{dR}{dt}-{u}_{2}\right)=j \notag \\
+{p}_{1}+\frac{{j}^{2}}{{\rho }_{1}}={p}_{v}+\frac{{j}^{2}}{{\rho }_{\nu }}-\frac{2\sigma }{R}-\frac{4\mu {u}_{1}}{R}\\
+ {\lambda }_{v}\frac{\partial {T}_{\nu }}{\partial r}={\lambda }_{1}\frac{\partial {T}_{1}}{\partial r}-jL \notag
+\end{gather}
+где \({u}_{1}, {u}_{2}\)~"--- соответственно скорости жидкости и пара на межфазной поверхности, \(j\)~"--- плотность потока массы вследствие фазового превращения, \(L\)~"--- теплота фазового перехода.
+
+Уравнение теплопереноса в жидкости:
+\begin{equation}
+ r\frac{d}{dt}\left(\frac{\Phi }{r}\right)={a}_{T}\frac{{\partial }^{2}\Phi }{\partial {r}^{2}} 
+\end{equation}
+где \( \Phi\left(r,t\right)=r\left(t\right)\left({T}_{1}-{T}_{0}-\Delta T\right) \).
+
+Начальное и граничные условия:
+\begin{equation}
+\Phi \left(r, 0\right)=0,~\frac{\partial \Phi \left(\infty, t\right)}{\partial r}=0,~\varphi \left(R,t\right)=R\left(t\right)\left({T}_{\nu }\left(t\right)-{T}_{0}-\Delta T\right) 
+\end{equation}
+
+Модель тепло-- массопереноса между пузырьками и жидкостью при барботажном выпаривании~\cite{Guy.Heat.1992} сформулирована на основе уравнения кондукции:
+\begin{equation}
+ \frac{\partial T}{\partial t}={\nabla }^{2}T 
+\end{equation}
+где \( t={4t\alpha}/{{d}_{E}^{2}}={Fo}_{t}~\text{"--- число Фурье},~T=\left({T-{T}_{G}}\right/\left({{T}_{L}-T_{G}}\right),~\nabla ={{d}_{E}}/{2} \); \(T\)~"--- температура,~\(\celcius\);
+\(t\)~"--- время, c; \(d_{E}\)~"--- эквивалентный диаметр пузырька, м; \(\alpha\)~"--- температуропроводность, \(\text{м}^{2}/\text{с}\); индексы: \(L\)~"--- жидкость, \(G\)~"--- газ.
+
+Начальные и граничные условия:
+\begin{equation}
+ t=0,~T=0;\; 
+  \xi =0,~\frac{\partial T}{\partial \xi }=0;\; 
+   \xi =\frac{1}{2},~T=1;\;
+    \eta =0,~\frac{\partial T}{\partial \eta }=0;\;
+     \eta =\frac{\pi }{2},~\frac{\partial T}{\partial \eta }=0 
+\end{equation}
+
+Эффективность массопереноса \({E}_{t}\) в безразмерном виде:
+\begin{equation}
+ {E}_{t}=\frac{{\iiint }_{\nu }TJ d\xi d\eta  d\varphi }{{\iiint }_{\nu }J\partial \xi d\eta d\varphi } 
+\end{equation}
+где \(J\)~"--- Якобиан; \(\eta,~\xi,~\varphi\)~"--- эллиптические координаты.
+
+Модель нестационарного процесса в выпарном аппарате с выносной камерой \cite{Ponomarenko.Mathematical.1977} задается уравнением изменения коэффициента теплопереноса от
+теплового потока:
+\begin{equation}
+ \left\{\begin{array}{c}\dfrac{\partial {t}_{1}}{\partial \stackrel{-}{x}}+{a}_{1}{\partial {t}_{1}}/{\partial \tau }={a}_{2}\left({t}_{2}-{t}_{1}\right)+{a}_{3}{G}_{1}\\ {b}_{0}\dfrac{\partial {t}_{2}}{\partial \tau }={b}_{1}\left({t}_{3}-{t}_{2}\right)-{b}_{2}\left({t}_{2}-{t}_{1}\right)-{b}_{3}{G}_{1}\end{array}\right. \end{equation}
+где \(a\)~"--- функция температуры \(t\) и массового расхода выпариваемой жидкости \(G\); \({a}_{1}=\dfrac{{m}_{1}}{{G}_{1}}\); \({a}_{2}=\dfrac{{a}_{21}{t}_{1}}{{c}_{1}{G}_{1}} \); \({a}_{3}=\dfrac{{f}_{1}}{{c}_{1}{G}_{1}{\left({t}_{2}-{t}_{1} \right)}_{0}} {\left(\dfrac{\partial {a}_{21}}{\partial {G}_{1}}\right)}_{0}-\dfrac{1}{{G}_{1}}{\left(\dfrac{\partial {t}_{1}}{\partial \stackrel{~}{x}}\right)}_{0} \); \({b}_{0}={c}_{2}{m}_{2}\); \( {b}_{1}={a}_{22}{f}_{3} \); \( {b}_{2}={a}_{21}{f}_{1} \); \( {b}_{3}={f}_{3}{\left({t}_{2}-{t}_{1}\right)}_{0}{\left(\dfrac{\partial {a}_{21}}{\partial {G}_{1}}\right)}_{0} \); \( \stackrel{-}{x}=\dfrac{\partial x}{l} \); \( \stackrel{~}{x}=\dfrac{x}{l} \); \(m\)~"--- масса; \(c\)~"---
+теплоемкость; \(t\)~"--- температура; \(\tau\)~"--- время; \(x\)~"--- координата; \(l\)~"--- длина труб аппарата; \(f\)~"--- теплообменная поверхность;
+индексы: \(1\)~"--- жидкость; \(2\)~"--- стенка; \(3\)~"---греющий пар.
+ 
+Граничные условия:
+\begin{equation}
+ {t}_{1}\left(x, 0\right)={t}_{3}\left(x, 0\right);\;  {t}_{1}\left(0, \tau \right)={t}_{10}\left(\tau \right);\;  {t}_{3}\left(0, \tau \right)={t}_{30}\left(\tau \right)  
+\end{equation}
+
+Модель неравновесного испарения капель~\cite{Dushin.Mathematical.2008} для многокомпонентной  смеси в представлена виде системы уравнений:
+\begin{gather}
+\frac{\partial\hat{\rho}}{\partial t}+\frac{1}{x^{k}}\frac{\partial\hat{\rho}vx^{k}}{\partial x}=0, \\
+\frac{\partial\hat{\rho}\mathrm{Y}_{i}}{\partial t}+\frac{1}{x^{k}}\frac{\partial\hat{\rho}\mathrm{Y}_{i}vx^{k}}{\partial x}=\frac{1}{x^{k}}\frac{\partial}{\partial x}x^{k}\hat{\rho}D_i\frac{\partial \mathrm{Y}_{i}}{\partial x},\; i=1, \ldots, N, \notag \\
+\frac{\partial\hat{\rho}\hat{h}}{\partial t}+\frac{1}{x^{k}}\frac{\partial\hat{\rho}v\hat{h}x^{k}}{\partial x}=\frac{1}{x^{k}}\frac{\partial}{\partial x}x^{k}\lambda\frac{\partial T}{\partial x},
+\end{gather}
+где \(v\)~"--- скорость; \(x\)~"--- поверхность перехода; \(\mathrm{Y}_{i}\)~"--- массовая концентрация \(i\)--го компонента; \(D_{i}\)~"--- коэффициент
+диффузии; \(\lambda\)~"--- теплопроводность; \(T\)~"--- температура; \(k=0, 1\) и \(2\)~"--- соответствуют случаям плоской, цилиндрической и сферической симметрии, соответственно; \(\displaystyle 1/\hat{\rho}=\sum_{i=1}^{N}\mathrm{Y}_{i}/\rho_{i}+L\Delta V_{x}\)~"--- удельный объем и \(\displaystyle \hat{h}=\sum_{i=1}^{N}h_{i}\mathrm{Y}_{i}+L\Delta h_{x}\)~"--- удельная энтальпия
+жидкости в смеси; \(L\Delta V_{x}\)~"--- удельный объем и \(L\Delta h_{x}\)~"--- удельная энтальпия растворителя.
+
+Граничные условия для \(x=x_{W}\):
+\begin{gather}
+\left(\rho v\right)_{g}=\left(\rho v\right)_{l}=\dot{m}, \notag \\ 
+\left(\rho v\mathrm{Y}_{j}\right)_{g}-\left(\rho D_{j}\frac{\partial \mathrm{Y}_{i}}{\partial x}\right)_{g}=\left(\rho v\mathrm{Y}_{i}\right)_{l}-\left(\rho D_{i}\frac{\partial \mathrm{Y}_{i}}{\partial x}\right)_{l}=\dot{m}_{i}, \\
+\sum_{i=1}^{N}h_{Li}\dot{m}_{i}=\left(\lambda\frac{\partial T}{\partial x}\right)_{g}+\left(\lambda\frac{\partial T}{\partial x}\right)_{l}+\dot{m}L\Delta h_{x}, \notag
+\end{gather}
+где \(h_{Li}\)~"--- удельная энтальпия фазового перехода; индексы: \(g\)~"--- газовая фаза; \(l\)~"--- жидкая фаза.
+ Дополнительным условием служит уравнение Герца---Кнудсена:
+\begin{equation}
+p_{i}=p_{e}X_{j}=p_{i}^{*}\left(T_{W}\right)-\displaystyle \frac{1}{\delta_{i}}\sqrt{\frac{2\pi RT}{m_{i}}}\dot{m}_{i}
+\end{equation} 
+где \(X_{i}\)~"--- молярная концентрация; \(p_{i}\)~"--- парциальное давление; \(\delta_{i}\)~"--- коэффициент аккомодации; \(p_{i}^{*}(T_{W})\)~"---  равновесное давление паров \(i\)--го компонента при температуре \(T_{W}\).

@@ -5,7 +5,15 @@
 \usepackage{listings}
 
 % Плавающие окружения. во многом лучше пакета float
-\usepackage{floatrow}
+\usepackage{floatrow,ltxtable}
 
 % Русская традиция начертания греческих букв
 %\usepackage{upgreek} % прямые греческие ради русской традиции
+
+\newcommand{\celcius}{\,^{\circ}\mathrm{C}}  %градус Цельсия
+
+%таблицы
+\newcolumntype{Y}{>{\centering\arraybackslash}X} %колонки таблиц
+\AtBeginEnvironment{longtable}{\footnotesize} %высота шрифта в таблице
+
+\usepackage{wrapfig}

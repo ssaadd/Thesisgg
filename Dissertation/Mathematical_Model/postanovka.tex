@@ -1,0 +1,135 @@
+%&latex
+\ExecuteMetaData[Mathematical_Model/heat_mass]{volume}
+Уравнение сохранения массы:
+\begin{equation}
+{\stackrel{.}{m}}_{F}=4\pi {r}^{2}{\rho }_{g}v\label{eq:math_mass_flow_rate}
+\end{equation}
+где \(\rho\)~"--- плотность, \(\text{кг}/\text{м}^{3}\); \(v\)~"--- радиальная скорость, \(\text{м}/\text{с}\); \({\stackrel{.}{m}}\)~"--- массовый
+расход, \(\text{кг}/\text{с}\), также:
+\begin{equation}
+{\stackrel{.}{m}}_{F}=4\pi {R}^{2}{{\stackrel{.}{m}}''_{FW} }_{}\label{eq:math_mass_flow_rate_surface}
+\end{equation}
+где \({\stackrel{.}{m}}''\)~"---массовый расход через площадь поверхности пузырька, \(\text{кг}/\text{м}^{2}\text{с}\); \(R\)~"---радиус пузырька,
+м.  
+
+
+Уравнения непрерывности для энергии (по закону Фурье) и массовой доли (по закону Фика), при постоянных плотности, теплопроводности и диффузии представлены ниже.
+
+\begin{equation}
+ {\rho }_{g}{C}_{Pg}\frac{DT}{Dt}={k}_{g}{\nabla }^{2}T 
+\end{equation}
+\begin{equation}
+ {\rho }_{g}\frac{DY_{F}}{Dt}={\rho}_{g}D_{F}{\nabla }^{2}Y_{F} 
+\end{equation}
+где \({C}_{P}\)~"---  теплоемкость при постоянном давлении, \(\text{Дж}/\text{моль}\cdot\text{К}\); \(k\)~"--- коэффициент теплопроводности, \(\text{Вт}/\text{м}\cdot\text{К}\); \(T\)~"---
+температура, \(\celcius\); \(t\)~"--- время,\,с; \(D\)~"--- массовая диффузия, \(\text{м}^{2}/\text{с}\); \(Y\)~"--- массовая доля.
+
+В стационарном режиме, и сферической системе координат, уравнения непрерывности преобразуются к виду:
+\begin{gather}
+ {k}_{g}\left[\frac{1}{{r}^{2}}\frac{\partial }{\partial r}\left({r}^{2}\frac{\partial T}{\partial r}\right)\right]-{\rho }_{g}{C}_{Pg}v\frac{\partial T}{\partial
+t}=0\label{eq:math_conservation_heat}\\
+ {\rho}_{g}D_{F}\left[\frac{1}{{r}^{2}}\frac{\partial }{\partial r}\left({r}^{2}\frac{\partial Y_{F}}{\partial r}\right)\right]-{\rho }_{g}v\frac{\partial Y_{F}}{\partial
+t}=0\label{eq:math_conservation_species}
+\end{gather}
+где \(r\)~"--- радиальная координата, \(\text{м}\). 
+
+Используя определение массового расхода (см~\cref{eq:math_mass_flow_rate}), \cref{eq:math_conservation_heat,eq:math_conservation_species} преобразуются:
+\begin{gather}
+ {k}_{g}\frac{\partial }{\partial r}\left({r}^{2}\frac{\partial T}{\partial r}\right)-\frac{{\stackrel{.}{m}}_{F}}{4\pi}{C}_{Pg}V\frac{\partial T}{\partial
+t}=0\label{eq:math_energy_diff}\\
+ {\rho}_{g}D_{F}\frac{\partial }{\partial r}\left({r}^{2}\frac{\partial T}{\partial r}\right)-\frac{{\stackrel{.}{m}}_{F}}{4\pi}\frac{\partial Y_{F}}{\partial
+t}=0\label{eq:math_species_diff}
+\end{gather}
+
+Используя значение массового расхода через единицу поверхности в уравнении~(\ref{eq:math_mass_flow_rate_surface}), уравнения непрерывности приводятся к виду:
+\begin{gather}
+ {k}_{g}\frac{\partial }{\partial r}\left({r}^{2}\frac{\partial T}{\partial r}\right)-{\stackrel{.}{m}}''_{FW}R^{2}{C}_{Pg}\frac{\partial T}{\partial
+t}=0\label{eq:math_energy_final}\\
+ {\rho}_{g}D_{F}\frac{\partial }{\partial r}\left({r}^{2}\frac{\partial Y_{F}}{\partial r}\right)-{\stackrel{.}{m}}''_{FW}R^{2}{}\frac{\partial Y_{F}}{\partial
+t}=0\label{eq:math_species_final}
+\end{gather}
+где \(R\)~"--- радиус пузырька, \(\text{м}\).
+
+Безразмерная температура \(b_{T}\) и нормализованная массовая доля компонента \(b_{D}\) определяются по уравнениям:
+\begin{gather}
+ {b}_{T}=\frac{{C}_{Pg}\left({T}_{\infty }-T\right)}{{L}_{H}+{C}_{{P}_{l}}\left({T}_{W}-{T}_{R}\right)}\\
+ {b}_{D}=\frac{{Y}_{{F}_{\infty }}-{Y}_{F}}{{Y}_{FW}-{Y}_{FR}} 
+\end{gather}
+где \({L}_{H}\)~"--- энтальпия испарения, \(\text{Дж}/\text{моль}\).
+
+В таком случае \cref{eq:math_energy_diff,eq:math_species_diff} преобразуются к виду:
+\begin{gather}
+ {\rho}_{g}\alpha_{g}\frac{\partial }{\partial r}\left({r}^{2}\frac{\partial{b}_{T}}{\partial r}\right)-{\stackrel{.}{m}}''_{FW}R^{2}\frac{\partial
+ {b}_{T}}{\partial t}=0\label{eq:math_nondimen_energy}\\
+ {\rho}_{g}D_{F}\frac{\partial }{\partial r}\left({r}^{2}\frac{\partial{b}_{D}}{\partial r}\right)-{\stackrel{.}{m}}''_{FW}R^{2}{}\frac{\partial{b}_{D}}{\partial
+t}=0\label{eq:math_nondimen_species}
+\end{gather}
+где \(\alpha= \frac{k}{\rho {C}_{P}} \)~"--- температуропроводность , \(\text{м}^{2}/\text{с}\).
+
+Учитывая упрощение, что число Льюиса равно нулю, \cref{eq:math_nondimen_energy,eq:math_nondimen_species}~"--- идентичны.
+
+Решение математической модели заключается в двойном интегрировании \cref{eq:math_energy_final,eq:math_species_final} с граничными условиями по температуре:
+\begin{equation*}
+\begin{array}{cccc}
+\text{при} & r=R,\quad T=T_{W} & \text{и} & {\stackrel{.}{m}}''_{FW}\cdot q= k_{g} \left.{\frac{\partial T}{\partial r}}\right\vert_{W}
+\end{array}
+\end{equation*}
+где \( q={L}_{H}+{C}_{P}\left({T}_{W}-{T}_{R}\right) \) определяет количество теплоты необходимого для испарения бесконечно малого  слоя жидкости при \(T_{R}\), \(\text{Дж}/\text{моль}\).
+\begin{equation*}
+\begin{array}{cc}
+\text{при} & r=r_{\infty},\quad T=T_{\infty}
+\end{array}
+\end{equation*}
+и для массовой доли:
+\begin{equation*}
+\begin{array}{cccc}
+\text{при} & r=R,\quad Y=Y_{FW} & \text{и} & {\stackrel{.}{m}}''_{FW}\cdot\ Y_{FW}= {\stackrel{.}{m}}''_{FW}\cdot Y_{FW}+\left( -\rho_{g}D_F \left.{\frac{\partial Y_{F}}{\partial r}}\right\vert_{W}\right)
+\end{array}
+\end{equation*}
+\begin{equation*}
+\begin{array}{cc}
+\text{при} & r=r_{\infty},\quad Y_{F}=Y_{F\infty}
+\end{array}
+\end{equation*}
+
+Как пример, решение энергетического уравнения приведено ниже.
+
+Интегрирование уравнения~(\ref{eq:math_energy_final}), дает:
+\begin{equation}
+{k}_{g}{r}^{2}\frac{\partial T}{\partial r}-{\stackrel{.}{m}}''_{FW}R^{2}{C}_{Pg}T=C_{1}\label{eq:math_energy_final_int}
+\end{equation}
+где \(C_{1}\)~--- константа интегрирования определяемая граничными условиями при \(r=R\):
+\begin{equation}
+C_{1}={\stackrel{.}{m}}''_{FW}R^{2}\left(q-{C}_{Pg}T_{W}\right)
+\end{equation}
+Тогда \cref{eq:math_energy_final_int} может быть переписано:
+\begin{equation}
+ \frac{dT}{q+{C}_{{p}_{g}}\left(T-TW\right)} 
+\end{equation}
+интегрируя которое:
+\begin{equation}
+ ln\left(q+{C}_{{P}_{g}}\left(T-{T}_{W}\right)\right)=-\frac{{\stackrel{.}{m}}''_{Fw}{R}^{2}}{{\rho }_{g}{\alpha }_{g}}\frac{1}{r}+{C}_{2} \label{eq:math_energy_final_int2}
+\end{equation}
+где \(C_2\) константа интегрирования определяемая граничными условиями при \(r=\infty\):
+\begin{equation}
+C_{2}=ln\left(q+{C}_{{P}_{g}}\left(T_{\infty}-{T}_{W}\right)\right)
+\end{equation}
+
+Используя \cref{eq:math_energy_final_int2} при \(r=R\), конечное решение выражения массового расхода пара на поверхности пузырька:
+\begin{equation}
+{\stackrel{.}{m}}''_{Fw}= \frac{{\rho }_{g}{\alpha }_{g}}{R}ln\left(\frac{C_{{P}_{g}}\left(T_{\infty}-{T}_{W}\right)}{L_{H}+C_{{P}_{l}}\left(T_{W}-{T}_{R}\right)}+1\right) \end{equation}
+или в безразмерном виде:
+\begin{equation}
+{\stackrel{.}{m}}''_{Fw}= \frac{{\rho }_{g}{\alpha }_{g}}{R}ln\left(b_{TW}+1\right)
+\end{equation}
+
+Используя аналогичные вычисления, \cref{eq:math_energy_final}, с граничными условиями по массовой доле
+приводится к виду:
+\begin{equation}
+{\stackrel{.}{m}}''_{Fw}= \frac{{\rho }_{g}{D }_F}{R}ln\left(\frac{{Y}_{{F}_{\infty }}-{Y}_{F}}{{Y}_{FW}-{Y}_{FR}}+1\right) \end{equation}
+или в безразмерном виде:
+\begin{equation}
+{\stackrel{.}{m}}''_{Fw}= \frac{{\rho }_{g}{D }_F}{R}ln\left(b_{DW}+1\right)
+\end{equation}
+\(b_{T}\) и \(b_{D}\) числа тепло- и массопереноса соответственно.
+

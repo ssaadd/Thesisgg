@@ -1,0 +1,112 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file '3Dy3x2x4.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{362.89662759bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.96202271)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{3Dy3x2x4.pdf}}%
+    \put(0.54355566,0.00030153){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{60}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{3Dy3x2x4.pdf}}%
+    \put(0.63002656,0.04080894){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{63}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{3Dy3x2x4.pdf}}%
+    \put(0.71649747,0.08148168){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{66}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{3Dy3x2x4.pdf}}%
+    \put(0.80313371,0.12198908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{69}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{3Dy3x2x4.pdf}}%
+    \put(0.88960434,0.16266182){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{72}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{3Dy3x2x4.pdf}}%
+    \put(0.97607525,0.20316922){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{75}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{3Dy3x2x4.pdf}}%
+    \put(0.09353888,0.2112707){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{8}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{3Dy3x2x4.pdf}}%
+    \put(0.15537467,0.1689446){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{8.8}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{3Dy3x2x4.pdf}}%
+    \put(0.23721616,0.12678383){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{9.6}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{3Dy3x2x4.pdf}}%
+    \put(0.30616141,0.08462307){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10.4}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{3Dy3x2x4.pdf}}%
+    \put(0.3880029,0.0424623){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{11.2}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{3Dy3x2x4.pdf}}%
+    \put(0.48985009,0.00030153){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{12}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{3Dy3x2x4.pdf}}%
+    \put(0.08692543,0.37197763){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{9}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{3Dy3x2x4.pdf}}%
+    \put(0.06146363,0.48143028){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{9.5}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{3Dy3x2x4.pdf}}%
+    \put(0.063117,0.59088294){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{3Dy3x2x4.pdf}}%
+    \put(0.03782054,0.7003356){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10.5}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{3Dy3x2x4.pdf}}%
+    \put(0.0522048,0.80995359){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{11}}}%
+    \put(0.02018245,0.46109391){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\(Y_{3}\) \%}}}}%
+    \put(0.12501461,0.07240275){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\(X_{2}\) м/c}}}%
+    \put(0.74880592,0.04933322){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\(X_{4}\) \%}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{3Dy3x2x4.pdf}}%
+    \put(0.52142933,0.8618692){\color[rgb]{0.00392157,0,0}\makebox(0,0)[lb]{\smash{10.0572}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{3Dy3x2x4.pdf}}%
+    \put(0.55829933,0.82830592){\color[rgb]{0.00392157,0,0}\makebox(0,0)[lb]{\smash{9.77447}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{3Dy3x2x4.pdf}}%
+    \put(0.45132672,0.93858526){\color[rgb]{0.00392157,0,0}\makebox(0,0)[lb]{\smash{10.7782}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{3Dy3x2x4.pdf}}%
+    \put(0.49348749,0.89642449){\color[rgb]{0.00392157,0,0}\makebox(0,0)[lb]{\smash{10.3659}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{3Dy3x2x4.pdf}}%
+    \put(0.52142933,0.8618692){\color[rgb]{0.00392157,0,0}\makebox(0,0)[lb]{\smash{10.0572}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{3Dy3x2x4.pdf}}%
+    \put(0.55829933,0.82830592){\color[rgb]{0.00392157,0,0}\makebox(0,0)[lb]{\smash{9.77447}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{3Dy3x2x4.pdf}}%
+    \put(0.45132672,0.93858526){\color[rgb]{0.00392157,0,0}\makebox(0,0)[lb]{\smash{10.7782}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{3Dy3x2x4.pdf}}%
+    \put(0.49348749,0.89642449){\color[rgb]{0.00392157,0,0}\makebox(0,0)[lb]{\smash{10.3659}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{3Dy3x2x4.pdf}}%
+    \put(0.52142933,0.8618692){\color[rgb]{0.00392157,0,0}\makebox(0,0)[lb]{\smash{10.0572}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{3Dy3x2x4.pdf}}%
+    \put(0.55829933,0.82830592){\color[rgb]{0.00392157,0,0}\makebox(0,0)[lb]{\smash{9.77447}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{3Dy3x2x4.pdf}}%
+    \put(0.59665736,0.78647583){\color[rgb]{0.00392157,0,0}\makebox(0,0)[lb]{\smash{9.45086}}}%
+  \end{picture}%
+\endgroup%

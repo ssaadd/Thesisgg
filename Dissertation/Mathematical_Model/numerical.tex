@@ -1,0 +1,21 @@
+\section{Численное моделирование}
+
+Для того, чтобы упростить численное решение краевой задачи со свободными
+границами (\ref{eq:math_continuity})--(\ref{eq:math_species})
+и (\ref{eq:math_boundary1})--(\ref{eq:math_boundary3}) введем безразмерные переменные:  плотность \(\gamma=\rho/\rho_{ref}\), время \(\tau=\alpha_{ref}t/R_{F}^{2}\),
+радиальная координата \(\eta=r/R_{t}\), радиальная скорость \(\vartheta=R_{F}v/\alpha_{ref}\), массовая диффузия \(\psi=D/D_{ref}\), число Льюиса \(Le=\alpha/D\), температура
+\(\Theta=(T-T_{0})/(T_{R}-T_{0})\), удельная
+средняя темлоёмкость смеси \(c=C_{p}/{C_p}_{ref}\),  удельная темлоёмкость \(i\)-го компонента
+\(c=\stackrel{-}{{C_p}_{i}^{0}}/{C_p}_{ref}\), температуропроводность \(k=\lambda/\lambda_{ref}\), скорость испарения \(\Gamma=\; \stackrel{.}{m}/4\pi R_{F}\rho_{ref}\alpha_{ref}\), число Якоба \(B={C_p}_{ref}(T_{R}-T_{0})/L_{1}\), число Био \(h/R_{F}/\lambda_{ref}\). Где \(L\) "--- скрытая теплота парообразования, \(Дж\), \(h\) "--- коэффициент
+теплопередачи \(Вт/м^{2}\celcius\). 
+
+Тогда безразмерные уравнения непрерывности и их граничные условия можно записать в виде:
+\begin{gather}
+ \frac{\partial \gamma }{\partial \tau }- \frac{\eta }{\beta }\frac{\partial \beta }{\partial \tau }\frac{\partial }{\partial \eta } +\frac{1}{{\eta}^{2}}\beta \frac{\partial }{\partial \eta }\left({\eta}^{2}\gamma \vartheta \right)=0\label{eq:math_continuity_dim}\\
+ \frac{\partial }{\partial \tau }\left({\gamma }{Y}_{1}\right)-\frac{\eta}{\beta }\frac{\partial \beta }{\partial \tau }\frac{\partial }{\partial \eta }\left(\gamma {Y}_{1}\right)+\frac{1}{{\eta }^{2}\beta }\frac{\partial }{\partial \eta }\left[{\eta }^{2}\gamma \left({Y}_{i}\vartheta-   \frac{\Psi }{\beta L{e}_{ref}}\frac{\partial {Y}_{1}}{\partial \eta}\right)\right]=0 \\
+ \frac{\partial }{\partial \tau }\left({\gamma }c\Theta\right)-\frac{\eta}{\beta }\frac{\partial \beta }{\partial \tau }\frac{\partial }{\partial \eta }\left(\gamma c\Theta\right)+\frac{1}{{\eta }^{2}\beta }\frac{\partial }{\partial \eta }\left[{\eta }^{2}\left(\gamma c\Theta \vartheta- \frac{k }{\beta }\frac{\partial \Theta}{\partial \eta}\right)\right]-\notag\\ -\left({c}_{1}-{c}_{2}\right)\frac{1}{{\eta }^{2}\beta }\frac{\partial }{\partial \eta }\left({\eta }^{2}\frac{\gamma \psi \theta }{Le_{ref}\beta }\frac{\partial {Y}_{1}}{\partial \eta }\right) =0  \\
+ -\frac{\Gamma }{{\beta }^{2}}={\gamma }_{S}\left({\vartheta }_{S}-\frac{\partial \beta }{\partial \tau }\right), \; \eta =1 \\
+ \left.\frac{{\gamma }_{S}{\Psi }_{S}\beta }{L{e}_{ref}}{\frac{\partial {Y}_{1}}{\partial \eta }}\right\vert_{\eta =1}=\Gamma\left(1-{Y_1}_{S}\right), \;\eta =1 \\
+ \left.\frac{-k}{\beta }{\frac{\partial \theta }{\partial \eta }}\right\vert_{\eta =1}=\frac{\Gamma }{{\beta }^{2}B}+{Bi}\left({\theta }_{S}-{\theta}_{L}\right), \;\eta =1\label{eq:math_boundary3_dim} 
+\end{gather}
+

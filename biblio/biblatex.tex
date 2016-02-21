@@ -1,6 +1,6 @@
 %%% Реализация библиографии пакетами biblatex и biblatex-gost с использованием движка biber %%%
 
-%\usepackage{csquotes} % biblatex рекомендует его подключать. Пакет для оформления сложных блоков цитирования.
+\usepackage{csquotes} % biblatex рекомендует его подключать. Пакет для оформления сложных блоков цитирования.
 
 %%% Загрузка пакета с основными настройками %%%
 \usepackage[%
@@ -160,8 +160,8 @@ sortcites=true,% сортировать номера затекстовых сс
 %\defbibenvironment{bibliography} % переопределяем окружение библиографии из gost-numeric.bbx пакета biblatex-gost
 %  {\list
 %     {\printtext[labelnumberwidth]{%
-%	\printfield{prefixnumber}%
-%	\printfield{labelnumber}}}
+%       \printfield{prefixnumber}%
+%       \printfield{labelnumber}}}
 %     {%
 %      \setlength{\labelwidth}{\labelnumberwidth}%
 %      \setlength{\leftmargin}{0pt}% default is \labelwidth

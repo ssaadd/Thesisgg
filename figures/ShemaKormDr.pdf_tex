@@ -1,0 +1,76 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'ShemaKormDr.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{482.6bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.7289838)%
+    \put(0,0){\includegraphics[width=\unitlength]{ShemaKormDr.pdf}}%
+    \put(0.3270291,0.66905512){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Барда}}}%
+    \put(0.6042527,0.67234217){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Ферментный реактор}}}%
+    \put(0.91245024,0.68893877){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Обогащенная}}}%
+    \put(0.91216128,0.64489168){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{барда}}}%
+    \put(0.60441135,0.55513979){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Декантерная}}}%
+    \put(0.60404306,0.52790633){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{центрифуга}}}%
+    \put(0.78757722,0.36553592){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Кек}}}%
+    \put(0.83311051,0.25282976){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Шнековый}}}%
+    \put(0.83313884,0.20761791){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{смеситель}}}%
+    \put(0.54914258,0.25502814){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Сушильная}}}%
+    \put(0.5492389,0.20996927){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{установка}}}%
+    \put(0.54919358,0.05955163){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{ДКК}}}%
+    \put(0.54940322,0.3679496){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Дрожжи}}}%
+    \put(0.32828026,0.3848726){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Дрожжевой}}}%
+    \put(0.32816694,0.3446842){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{сепаратор}}}%
+    \put(0.32733506,0.55283376){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Узел}}}%
+    \put(0.32698377,0.52788366){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{ферментации}}}%
+    \put(0.10680476,0.58735927){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Вода}}}%
+    \put(0.10724103,0.53855128){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{ в замкнутый}}}%
+    \put(0.10698607,0.49505894){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{цикл}}}%
+    \put(0.10704839,0.38452698){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Мембранный}}}%
+    \put(0.10688408,0.34197589){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{фильтр}}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,114 @@
+\section{Постановка задачи}
+
+\subsection{Модель газофазной тепло- и массопередачи }
+
+Предполагается, что пузырь, является сферическим со сферической симметрией во всех переменных направлениях. 
+Для того чтобы смоделировать стадию формирования, предположим, что сферический пузырек формируется в отверстии на входе, и растет радиально во время стадии формирования.
+
+Кроме того, гидростатический напор столба жидкости так же не учитывается в целях рассмотрения давления внутри пузыря постоянным в течение всего процесса, что обосновано для аппаратов малой высота которые обычно используются в качестве выпарных аппаратов.
+
+Другие упрощения: газовая фаза представляет собой идеальным бинарную смесь водяного пара и воздуха (или любого другого газа), существует равновесие жидкость-пар на поверхности пузырька, вязкая диссипации является незначительной, сила тяжести является единственной, и образование пузырей, как предполагается, происходят в режиме постоянной скорости потока.
+
+Используя вышеуказанные упрощения, модель газовой фазы состоит из уравнений сохранения непрерывности, энергии и химической компонентов в виде одномерной переходной проблемы с подвижными границами. 
+Уравнение сохранения импульса выводится из модели в предположении постоянного давления.
+% 
+% Полагая \(V_{I}\) – конечный объем газового впрыска, расположенный в центре пузыря, ограниченной площадью поверхности \(S_{I}\). 
+% Пусть \(S\) – площадь поверхности пузыря. Источники массы и энергии в уравнениях баланса генерируются через предельного процесса, где, во-первых, уравнения сохранения интегрированы в объеме, ограниченном \(S_{I}\) и \(S\), а затем, \(V_{I}\) берется равной нулю в предположении, что нет накопление тепла и массы в объеме закачки газа. 
+% Эта процедура выражает закачку газа в качестве точечного источника массы и энергии в центра пузыря. 
+Полученные уравнения баланса для пузырька представлены ниже:
+
+
+\begin{align}
+\frac{\partial \rho}{\partial t} + \frac{1}{r^{2}}&\frac{\partial }{\partial r} (r^{2} \rho \nu)= 0 \\
+\frac{\partial}{\partial t}(Y_{i}  \rho)+ \frac{1}{r^{2}}& \frac{\partial}{\partial r} \left[r^{2}  \rho   Y_{i}  \left(\nu  + W_{i} \right)\right] = 0 \\
+\frac{\partial}{\partial t}(H \rho)+ \frac{1}{r^{2}}& \frac{\partial}{\partial r} \left(r^{2} \rho H \nu \right)+ \frac{1}{{r}^{2}}\frac{\partial }{\partial r}\left({r}^{2}q\right)=0 
+\end{align}
+
+ \begin{equation}
+ H\left(T\right)=\sum _{i=1}^{2}Y_{i}{H}_{i}^{0}\left(T\right) 
+ \end{equation} 
+
+ \begin{equation}
+ q=-\lambda \frac{\partial T}{\partial r}+\sum _{i=1}^{2}\rho {H}_{i}^{0}{Y}_{i}{W}_{i}  \end{equation} 
+ 
+  \begin{equation}
+ {W}_{i}=-\frac{{D}_{i}}{{Y}_{i}}\frac{\partial {Y}_{i}}{\partial r} 
+ \end{equation} 
+ 
+ \begin{equation} 
+  -\frac{\stackrel{.}{m}}{4\pi {R}^{2}}={\rho }_{S}\left({\nu}_{S}-\frac{dR}{dt}\right) , \, r=R\left(t\right)   
+\end{equation} 
+
+\begin{equation}
+  {\rho }_{S}{D}_{S}{\frac{\partial {Y}_{1}}{\partial r}|}_{r=R\left(t\right)}=\frac{\stackrel{.}{m}}{4\pi {R}^{2}}\left(1-{Y_1}_{S}\right), \, r=R\left(t\right)
+ \end{equation} 
+ 
+ \begin{equation}
+ -\lambda {\frac{\partial T}{\partial r}}|_{r=R\left(t\right)}=\frac{\stackrel{.}{m}}{4\pi {B}^{2}}{L}_{1}\left({T}_{S}\right)+h\left({T}_{S}-{T}_{L}\right), \, r=R\left(t\right) 
+ \end{equation} 
+
+\begin{multline}
+ \frac{\partial }{\partial t}\left(\rho {C}_{p}T\right)+\frac{1}{{r}^{2}}\left({r}^{2}\rho \nu{C}_{p}T\right)-\frac{1}{{r}^{2}}\frac{\partial }{\partial r}\left({r}^{2}\lambda \frac{\partial T}{\partial r}\right)+\\
+ +\left(\stackrel{-}{{C}_{{P}_{1}}^{0}}-\stackrel{-}{{C}_{{P}_{2}}^{0}}\right)\frac{1}{{r}^{2}}\frac{\partial }{\partial r}\left({r}^{2}{T}_{\rho }D\frac{\partial {Y}_{1}}{\partial r}\right) \end{multline}
+
+\begin{equation}
+ -{\rho }_{I}{Q}_{I}\delta \left(r\right)\sum _{i=1}^{2}{Y}_{{i}_{I}}\stackrel{-}{{C}_{{p}_{i}}^{0}}{T}_{I}=0 \end{equation}
+
+\begin{equation}
+ \nu\left(r,t\right)=-\frac{1}{{r}^{2}\rho \left(r,t\right)}\underset{0}{\overset{r}{\int }}\frac{\partial \rho \left(\xi ,t\right)}{\partial t}{\xi }^{2}d\xi  
+\end{equation}
+
+\begin{equation}
+ \stackrel{-}{{C_p}_{i}^{0}}=\frac{1}{{T}_{0}-{T}_{L}}\underset{{T}_{L}}{\overset{{T}_{0}}{\int }}{C}_{{p}_{i}}^{0}dT 
+\end{equation}
+
+\begin{equation}
+ \frac{{V}_{g}}{{V}_{L}} = \frac{\epsilon }{1-\epsilon } 
+\end{equation}
+
+\begin{equation}
+  {V}_{g}=\stackrel{-}{V}{f}_{orif}N{t}_{r}=\stackrel{-}{V}f{t}_{r}   
+\end{equation}
+
+\begin{equation}
+ \frac{\epsilon }{1-\epsilon }= \frac{ \stackrel{-}{V}{f}_{orif}{t}_{r}}{\left({\stackrel{-}{V}f}_{orif}{t}_{r}\right)_{hyp}}\left(\frac{\epsilon}{1-{\epsilon }}\right)_{hyp} 
+\end{equation}
+
+\begin{equation} 
+\frac{\epsilon }{1-\epsilon }=\stackrel{-}\beta^{3} \frac{{t}_{r}}{{t}_{{r}_{hyp }}}\frac{{\epsilon }}{1-{\epsilon }_{hyp}} 
+\end{equation} 
+
+\begin{equation} 
+ \stackrel{-}{\beta }=\frac{1}{Z}\underset{0}{\overset{Z}{\int }}\beta \left(z\right)dz
+\end{equation} 
+ 
+\begin{equation}  
+ z\left({t}_{r}\right)=\underset{{t}_{F}}{\overset{{t}_{r}}{\int }}Udt=Z \end{equation} 
+ 
+\begin{equation}
+ \frac{\partial \gamma }{\partial \tau }- \frac{\eta }{\beta }\frac{\partial \beta }{\partial \tau }\frac{\partial }{\partial \eta } +\frac{1}{{\eta}^{2}}\beta \frac{\partial }{\partial \eta }\left({\eta}^{2}\gamma \vartheta \right)=0 
+\end{equation}
+
+
+
+\begin{equation}
+ \frac{\partial }{\partial \tau }\left({\gamma }{Y}_{1}\right)-\frac{\eta}{\beta }\frac{\partial \beta }{\partial \tau }\frac{\partial }{\partial \eta }\left(\gamma {Y}_{1}\right)+\frac{1}{{\eta }^{2}\beta }\frac{\partial }{\partial \eta }\left[{\eta }^{2}\gamma \left({Y}_{i}\vartheta-   \frac{\Psi }{\beta L{e}_{ref}}\frac{\partial {Y}_{1}}{\partial \eta}\right)\right]=0 
+\end{equation}
+
+\begin{multline}
+ \frac{\partial }{\partial \tau }\left({\gamma }c\Theta\right)-\frac{\eta}{\beta }\frac{\partial \beta }{\partial \tau }\frac{\partial }{\partial \eta }\left(\gamma c\Theta\right)+\frac{1}{{\eta }^{2}\beta }\frac{\partial }{\partial \eta }\left[{\eta }^{2}\left(\gamma c\Theta \vartheta- \frac{k }{\beta }\frac{\partial \Theta}{\partial \eta}\right)\right]\\ -\left({c}_{1}-{c}_{2}\right)\frac{1}{{\eta }^{2}\beta }\frac{\partial }{\partial \eta }\left({\eta }^{2}\frac{\gamma \psi \theta }{Le_{ref}\beta }\frac{\partial {Y}_{1}}{\partial \eta }\right) =0  
+\end{multline}
+
+\begin{equation}
+ -\frac{\Gamma }{{\beta }^{2}}={\gamma }_{S}\left({\vartheta }_{S}-\frac{\partial \beta }{\partial \tau }\right), \; \eta =1 
+\end{equation}
+
+\begin{equation}
+ \frac{{\gamma }_{S}{\Psi }_{S}\beta }{L{e}_{ref}}{\frac{\partial {Y}_{1}}{\partial \eta }|}_{\eta =1}=\Gamma\left(1-{Y_1}_{S}\right), \;\eta =1 
+\end{equation}
+
+\begin{equation}
+ \frac{-k}{\beta }{\frac{\partial \theta }{\partial \eta }|}_{\eta =1}=\frac{\Gamma }{{\beta }^{2}B}+{B}_{i}\left({\theta }_{3}-{Q}_{L}\right), \;\eta =1 
+\end{equation}
+ 
+ 
